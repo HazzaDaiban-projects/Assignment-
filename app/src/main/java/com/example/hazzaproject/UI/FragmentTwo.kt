@@ -51,7 +51,6 @@ class FragmentTwo : Fragment(){
 
     private fun initializeUi(){
 
-        val fab = view!!.findViewById<FloatingActionButton>(R.id.floatingActionButton)
         val recyclerView = view!!.findViewById<RecyclerView>(R.id.recyclerView)
         val swipeContainer = view!!.findViewById<SwipeRefreshLayout>(R.id.swipeContainer)
         load(recyclerView , swipeContainer )
@@ -72,12 +71,15 @@ class FragmentTwo : Fragment(){
 
 
 private fun fake(){
-    val extra1  : Profile
-    val extra2 : Profile
-    extra1 = Profile("Ali Ahmad" , "person2","Tester" , "Ali@mail.com")
-    extra2 = Profile("Saleh Rashid" , "person3","Cleaner" , "saleh@mail.com")
+
+    val extra1 = Profile("Ali Ahmad" , "person2","Tester" , "Ali@mail.com")
+    val extra2 = Profile("Saleh Rashid" , "person3","Cleaner" , "saleh@mail.com")
+    val extra3 = Profile("Mohammed Jaber" , "person1","Nothing" , " Nohammed@mail.com")
+
     viewModel.addProfile(extra1)
     viewModel.addProfile(extra2)
+    viewModel.addProfile(extra3)
+
 }
 
     private fun load(recyclerView: RecyclerView , swipeContainer :SwipeRefreshLayout){
