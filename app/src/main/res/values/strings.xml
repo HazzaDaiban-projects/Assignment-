@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HazzaProject</string>
+    <string name="bio">bio</string>
+    <string name="name">Name</string>
+    <string name="add_bio">+ Add bio</string>
+    <string name="add_to_story">Add to story</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="more">More</string>
+    <string name="view_as">View as</string>
+    <string name="back">back</string>
+    <string name="todo">TODO</string>
+</resources>
